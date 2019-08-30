@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,22 +11,70 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/index.css">
 
-    <title>Interview</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <title>Awamo Interview</title>
+</head>
+<body>
+<div class="container-fluid d-flex h-100 flex-column">
+    <div class="row pt-8 px-0">
+        <div id="form" class="col-3 pt-3 px-4 left-form">
+            <h3 class="mb-4">Numbers</h3>
+            <!-- creating a form for the input data and operations-->
+            <form id="nums_form" action="#" method="post">
+                <div class="form-group">
+                    <label for="num1">Number one</label>
+                    <input type="number" class="form-control" id="num1" name="num1" placeholder="Enter number one">
+                </div>
+                <div class="form-group">
+                    <label for="num2">Number two</label>
+                    <input type="number" class="form-control" id="num2" name="num2" placeholder="Enter number two">
+                </div>
+                <div class="form-group">
+                    <label for="operand">Operation</label>
+                    <select class="form-control" id="operand" name="operand">
+                        <option value="ADD">Add</option>
+                        <option value="DIV">Divide</option>
+                        <option value="MUL">Multiply</option>
+                        <option value="SUB">Subtract</option>
+                    </select>
+                </div>
+                <button id="post-btn" type="submit" class="btn btn-info btn-lg btn-block">Post</button>
+            </form>
+        </div>
+        <!-- creating a table for the data-->
+        <div class="col-9 right-table">
+            <div class="container">
+                <h3 class="my-3">Results</h3>
+                <table id="awamo">
+                    <thead>
+                    <tr>
+                        <th>Number1</th>
+                        <th>Number2</th>
+                        <th>Response</th>
+                        <th>Expected</th>
+                        <th>Passed</th>
+                        <th>Remove</th>
+                    </tr>
+                    </thead>
+                    <tbody id="data_body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
-   <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
-<!--    <script type="text/javascript" src="backend/mock-backend.js"></script>-->
-    <script type="text/javascript" src="http://api.mathjs.org/v4/"></script>
+<!-- <script type="text/javascript" src="backend/mock-backend.js"></script> -->
 
-    <!-- custom js -->
-    <script src="js/app.js"></script>
-  </body>
+<!--<script type="text/javascript" src="backend/mock-backend.js"></script>-->
+
+<!-- custom js -->
+<script src="js/app.js"></script>
+</body>
 </html>

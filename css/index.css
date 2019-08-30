@@ -4,36 +4,58 @@
 }
 
 html, body {
-  font-family: 'Montserrat', sans-serif;
-   background-color:#FBFCFC;
-   color: #1C2833;
-   height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcf9dc;
+    color: #1C2833;
+    height: 100%;
 }
 
-#form{
-  background-color: #1C2833;
-  color: white;
-  columns: 100%;
+#form {
+    background-color: #1C2833;
+    color: white;
+    height: 100%;
 }
+
 #awamo {
-  font-family: Montserrat;
-    src: url('fonts/Montserrat/Montserrat-Medium.ttf');
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 #awamo td, #awamo th {
-  padding: 8px;
+    padding: 8px;
 }
 
-#awamo tr:nth-child(even){background-color: #F5B7B1;}
+#awamo tr:nth-child(even) {
+    background-color: #F5B7B1;
+}
 
-#awamo tr:hover {background-color: #ddd;}
+#awamo tr:hover {
+    background-color: #ddd;
+}
 
 #awamo th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  color: #7D6608  ;
-  background-color: #1C2833;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #7D6608;
+    background-color: #1C2833;
+}
+
+.form-control {
+    border-radius: 60px;
+    color: #7D6608;
+    background-color: #1C2833;
+    border-color: #7D6608;
+}
+
+.row {
+    height: 100%;
+}
+
+#post-btn {
+    border-radius: 60px;
+    background-color: #7D6608;
+    color: black;
+    border-color: #7D6608;
+
 }
