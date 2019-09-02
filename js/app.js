@@ -51,15 +51,15 @@ $(document).ready(function () {
                 const add = `${num1} + ${num2}`;
                 postData(add, num1, num2);
                 break;
-            case "multiply":
+            case "mul":
                 const multiply = `${num1} * ${num2}`;
                 postData(multiply, num1, num2);
                 break;
-            case "divide":
+            case "div":
                 const divide = `${num1} / ${num2}`;
                 postData(divide, num1, num2);
                 break;
-            case "subtract":
+            case "sub":
                 const subtract = `${num1} - ${num2}`;
                 postData(subtract, num1, num2);
                 break;
@@ -90,11 +90,11 @@ $(document).ready(function () {
                 return res.json();
             })
             .then(function (data) {
-                console.log(data);
+                console.log(data.result);
                 let newRow = {
                     num1: num1,
                     num2: num2,
-                    resp: data,
+                    resp: Math.random(),
                     expec: data.result,
                     passed: ((data.result === data) ? "Yes" : "No")
                 };
@@ -102,14 +102,4 @@ $(document).ready(function () {
             })
     }
 
-    function verifyNumber(result) {
-        if (Math.round(Math.random()) === 1) {
-            result = Math.ceil(Math.random() * 2000);
-        }
-        config.success(response);
-        return {
-            fail: function () {
-            }
-        };
-    }
 });
